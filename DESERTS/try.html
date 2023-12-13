@@ -1,0 +1,203 @@
+<html>
+<head>
+<style>
+.button {
+background-color: brown; /* Green */
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+.button1 {
+background-color: white;
+color: black;
+border: 2px solid #aa8c04;
+}
+.button1:hover {
+background-color: #aa1a04;
+color: white;
+}
+h1 {
+font-family: Tahoma, Verdana, sans-serif;
+text-transform: uppercase;
+color: #af7c4c;
+}
+/* Imported Typfaces */
+@font-face{
+font-family:Montserrat;
+src:url(montserrat-regular.ttf) format('ttf');
+font-weight:normal;
+font-style: normal;
+}
+.slider {
+overflow: hidden;
+width: 60%;
+height: 400px;
+position: relative;
+}
+.slider img {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+opacity: 1;
+}
+body{
+background-image: url('');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+/* Style for <a> elements in the navigation */
+nav a:link,
+nav a:visited {
+background-color: #fb9348;
+color: rgb(13, 6, 6);
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+nav a:hover,
+nav a:active {
+background-color: yellow;
+}
+nav ul {
+list-style-type: none; / Remove default list bullets /
+padding: 0; / Remove default padding /
+margin: 0; / Remove default margin */
+}
+
+nav ul li {
+display: inline;
+margin-right: 10px;
+}
+</style>
+
+</head>
+<body>
+<header>
+<table>
+<tr><td width="100%" ><nav>
+<ul>
+<li><a href="try.html">Home</a></li>
+<li><a href="aboutus.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News & Events</a></li>
+</ul>
+</nav></td></tr>
+</table>
+</header><div class="slider">
+<img src="https://img.haikudeck.com/mg/981858C2-7A58-4DDB-A738-4ED3D93A4CC6.jpg" alt="Image4">
+<img src="https://img.haikudeck.com/mg/26BB0362-1540-46B6-B8DE-DFA4BAF52953.jpg" alt="Image 1">
+<img src="https://survivalworld.com/wp-content/uploads/2020/03/desert_regions.png" alt="Image 2">
+<img src="https://img.freepik.com/free-photo/beautiful-shot-people-walking-with-their-camels-desert-erg-lihoudi-morocco_181624-7871.jpg?w=1060&t=st=1693648572~exp=1693649172~hmac=b0cad5cd8a97fe19738d99c2711b22204af2bcf4ab738eea58991611643f4266" alt="Image 3">
+</div>
+<script>
+window.alert("protect the deserts!" );
+const sliderImages = document.querySelectorAll('.slider img');
+let currentSlide = 0;
+function startSlider() {
+setInterval(() => {
+// Reset all images
+sliderImages.forEach(img => {
+img.classList.remove('active');
+});
+// Show the next image
+currentSlide = (currentSlide + 1) % sliderImages.length;
+sliderImages[currentSlide].classList.add('active');
+}, 3000);
+}
+startSlider();</script>
+<h2>Visit Deserts of Africa and Australia</h2>
+<button class="button button1" onclick="document.getElementById('myImage').src='image2.jpg'">Visit Africa Desert</button>
+<img id="myImage" src="https://intosafaris.com/wp-content/uploads/2020/06/Kalahari-Desert-41.jpg" style="width:400px">
+<button class="button button1" onclick="document.getElementById('myImage').src='https://img.freepik.com/free-photo/beautiful-shot-namib-desert-africa-with-clear-blue-sky_181624-27309.jpg?size=626&ext=jpg&uid=R99645412&ga=GA1.2.600724297.1693300407&semt=ais'">Visit Australia Desert</button><table>
+<p>
+<h1>
+Deserts Of The World List </h1>
+<p><br>
+Arabian Desert
+<br>
+Atacama Desert
+<br>
+Chihuahuan Desert
+<br>
+Gobi Desert
+<br>
+Great Basin Desert
+<br>
+Great Sandy Desert
+<br>
+Great Victoria Desert
+<br>
+Kalahari Desert
+<br>
+Karakum Desert
+<br>
+Kyzylkum Desert
+<br>
+Mojave Desert
+<br>
+Namib Desert
+<br>
+Patagonian Desert
+<br>
+Rub’ Al Khali
+<br>
+Sahara Desert
+<br>
+Sonoran Desert
+<br>
+Syrian Desert
+<br>
+Taklamakan Desert
+<br>
+Thar Desert
+<br>
+Antarctica
+</p>
+<tr>
+<td>
+<br><br><br><br><br><br>
+<img src="image1.jpg" width="500" height="800">
+<br><br><br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n4crvs-KTBw?si=CmwXMh8rW_zyWNdy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture;" allowfullscreen></iframe>
+<br><br><br><br><br><br>
+<p style="font-size:17px;">Deserts are unique ecosystems that are characterized by their harsh climatic conditions. They<br> are known for their extreme temperatures, limited precipitation, and sparse vegetation. Despite<br> these challenges, deserts are home to a diverse range of plants and animals that have adapted<br> to survive in these conditions. Some of the most famous deserts include the Sahara in Africa,<br> the Mojave in North America, and the Gobi in Asia. Whether you are interested in exploring<br> the natural beauty of these arid landscapes or studying the unique adaptations of desert creatures,<br> there is no shortage of fascinating things to discover in deserts around the world.
+One of the<br> most interesting aspects of deserts is the way that plants and animals have adapted to thrive<br> in this challenging environment. For example, many desert plants have evolved to store water<br> in their tissues or have developed long root systems that allow them to access water deep underground.<br> Similarly, desert animals have developed a variety of strategies to cope with the extreme temperatures<br> and limited resources of their habitat. Some animals, such as the fennec fox, have large ears that help<br> them dissipate heat, while others, like the kangaroo rat, are able to survive for long periods of time<br> without water by conserving moisture in their bodies. Whether you are a biologist studying these<br> adaptations or simply a nature lover interested in exploring these unique ecosystems, deserts<br> are sure to offer a wealth of opportunities for learning and discovery.</p>
+<img src='https://thebucketlistcompany.co.uk/wp-content/uploads/2019/02/10-THINGS-YOU-DIDNT-KNOW-ABOUT-8-768x1920.png' width="400" height="700">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p style="font-size:50px;">
+Fun facts.</p>
+<br>
+<p style="font-size:17px;">Did you know that it snowed in the Sahara desert in 1979?  Rain has never been recorded in parts<br> of Chile's Atacama Desert. It is the driest place on earth. Camels can run as fast as 65 km/h,<br> which is as fast as your parents drive their car to work. In the deserts, there is gold and diamonds.<br> The most popular desert is the Sahara Desert. Sahara means desert in Arabic. In the deserts,<br> there are some cacti. A cactus is a plant with spines. Deserts have a large difference between day<br> and night in temperature. Some deserts have snow or ice at night due to negative temperatures.<br>
+    Most of the deserts, except for Antarctica, can reach up to 53 degrees. Antarctica can reach up to<br> -90 degrees. </p><img src="Image4.jpg" width="450" height="600">
+</td>
+</tr>
+</table>
+<footer><table width="100%"><tr><td><div class="social-icons">
+    <a href="#" target="_blank" rel="noopener noreferrer"><img src="facebook.jpg" height="50"width="50" alt="Facebook"></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"><img src="youtube.jpg" height="50"width="50" alt="Youtube"></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"><img src="instagram.jpg" height="50"width="50" alt="Instagram"></a>
+    <!-- Add more social media icons as needed -->
+    </div><h5>copyright&copy;2023</h5></td>
+
+   </tr></table>
+</footer>
+</body>
+</html>

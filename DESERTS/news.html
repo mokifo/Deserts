@@ -1,0 +1,170 @@
+<html>
+<head>
+<style>
+p{
+font-size: x-large;
+}
+.flip-card {
+background-color: transparent;
+width:500px;
+height:500px;
+perspective: 1000px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-card-back {
+background-color: #2980b9;
+color: white;
+transform: rotateY(180deg);
+}
+.button {
+background-color: brown; /* Green */
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+.button1 {
+background-color: white;
+color: black;
+border: 2px solid #aa8c04;
+}
+.button1:hover {
+background-color: #aa1a04;
+color: white;
+}
+h1 {
+font-family: Tahoma, Verdana, sans-serif;
+text-align: center;
+text-transform: uppercase;
+color: #af7c4c;
+}
+/* Imported Typfaces */
+@font-face{
+font-family:Montserrat;
+src:url(montserrat-regular.ttf) format('ttf');
+font-weight:normal;
+font-style: normal;
+}
+.slider {
+overflow: hidden;
+width: 60%;
+height: 400px;
+position: relative;
+}
+.slider img {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+opacity: 1;
+}
+body{
+background-image: url('');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+/* Style for <a> elements in the navigation */
+nav a:link,
+nav a:visited {
+background-color: #fb9348;
+color: rgb(13, 6, 6);
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+nav a:hover,
+nav a:active {
+background-color: yellow;
+}
+nav ul {
+list-style-type: none; / Remove default list bullets /
+padding: 0; / Remove default padding /
+margin: 0; / Remove default margin */
+}
+
+nav ul li {
+display: inline;
+margin-right: 10px;
+}
+</style>
+
+</head>
+<body>
+<header>
+<table>
+<tr><td width="100%" ><nav>
+<ul>
+<li><a href="try.html">Home</a></li>
+<li><a href="aboutus.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News & Events</a></li>
+</ul>
+</nav></td></tr>
+</table>
+</header>
+<h2>Deserts preserve natures beauties...</h2>
+<table>
+    <tr>
+        <td><br>
+            <div class = "flip-card">
+            <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+            <img src = "desertflip.jpg" width = "500" height = "500">
+            </img></div>
+            <div class = "flip-card-back">
+            <h1>deserts </h1>
+            <p>Bacon ipsum dolor amet pastrami ball tip biltong flank capicola prosciutto. Capicola cow tongue ham hock flank biltong fatback hamburger alcatra tenderloin shankle ham swine salami. Ball tip meatloaf flank, brisket kevin ham hock short loin strip steak cow pancetta ham spare ribs picanha. Pastrami turducken shank pork belly pig. Burgdoggen buffalo kevin, rump sausage kielbasa tongue shankle pork chop sirloin tri-tip. Shank fatback pork loin, short ribs pork chop leberkas shoulder turducken buffalo doner.</p>
+            </div>
+            </div>
+            </div></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+    <br>
+    <p>Put mouse on image.
+</body>
+</html>
